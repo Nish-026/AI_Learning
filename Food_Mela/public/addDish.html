@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add Dish</h1>
+    <form action="http://localhost:5000/menu/add" method="post">
+      <label for="dish_id">Dish ID:</label>
+      <input type="text" id="dish_id" name="dish_id" required /><br /><br />
+      <label for="name">Dish Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required /><br /><br />
+      <label for="availability">Availability:</label>
+      <select id="availability" name="availability" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option></select
+      ><br /><br />
+      <input type="submit" value="Add Dish" />
+    </form>
+  </body>
+</html>
